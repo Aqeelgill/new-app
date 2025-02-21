@@ -1,0 +1,57 @@
+.about-container{
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    margin-top: -2rem;
+    justify-content: space-between;
+    background-image: url("../../assets/images/wallpaper.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    margin-bottom: 4rem;
+
+
+}
+.about-container h2{
+    color: cyan;
+    font-size: 2.5rem;
+}
+.about-container h1{
+    color: #fff;
+    font-size: 4rem;
+}
+.about-container h3{
+    color: #fff;
+    font-size: 2rem;
+    gap: 2rem;
+}
+
+.about-container p{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+.about-container span{
+    color: cyan;
+}
+.btn-box {
+    padding: 12px 20px;
+    background: #0ef;
+    border-radius: 40px;
+    font-size: 22px;
+    color: #081b29;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: bold;
+    animation: slideTop 1s ease forwards;
+    animation-delay: 2s;
+
+}
+
+.btn-box:hover {
+    box-shadow: 0 0 5px cyan,
+        0 0 25px cyan, 0 0 50px cyan,
+        0 0 100px cyan, 0 0 200px cyan;
+
+}

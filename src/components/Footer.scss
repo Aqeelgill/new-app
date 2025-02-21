@@ -1,0 +1,151 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+
+.footer {
+  display: flex;
+  position: relative;
+  width: 90%;
+  margin-left: 2rem;
+  background-color: #081b29;
+  padding: 20px;
+  box-shadow: 0 0 20px #012290f7;
+  border-radius: 0 7px;
+  display: flex; 
+  align-items: center;
+  text-align: center;
+  z-index: 9999;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 0.5rem;
+  margin-left: 0.5em;
+  border-radius: 7px;
+  width: 50%;
+ 
+}
+
+.social-icons {
+margin-top: 1rem;
+  flex-direction: row;  
+  color: #081b29;
+}
+
+.social-icons a {
+  font-size: 24px;
+  color: cyan;
+  margin-right: 1rem;
+  
+}
+
+.social-icons a:hover {
+  padding: 6px 6px;
+  border-radius: 50px;
+  background-color: cyan;
+  color: #081b29;
+   box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
+
+}
+
+.copyright{
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.5;
+  
+  
+  
+}
+
+.footer-link{
+  color: cyan;
+  font-size: 24px;
+}
+.touch {
+  font-size: 20px;
+  background-color: #081b29;
+  color: cyan;
+  padding: 10px 10px;
+  border-radius: 7px;
+  position: absolute;
+  bottom: 100%;
+  box-shadow: 0 0 20px #012290f7;
+  transform: translateX(-16%); 
+  white-space: nowrap;
+  margin: 0;
+}
+
+
+.btn-submit {
+  background-color: cyan;
+  cursor: pointer;
+  border-radius: 4px;
+  border: none;
+  font-weight: bold;
+  padding: 8px 16px;
+}
+
+.btn-submit:hover {
+  box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan,
+    0 0 200px cyan;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .social-icons {
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .social-icons a {
+    font-size: 24px;
+    transition: none;
+    
+  }
+
+  .touch {
+    left: 1em;
+  }
+  .social-icons :hover {
+    pointer-events: none;
+  }
+  .social-icons a :hover {
+    pointer-events: none;
+    transition: none !important
+  }
+}
+
+@media (max-width: 450px) {
+  .footer{
+    display: none;
+  }
+  
+  
+}
